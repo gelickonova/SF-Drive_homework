@@ -359,12 +359,16 @@ template {
 
 
 body {
-    font-family: 'Roboto';
+    font-family: Roboto;
     margin: 0;
 }
 
 html, body {
     overflow-x: hidden;
+}
+
+a, .button {
+    cursor: pointer;
 }
 
 header {
@@ -456,7 +460,7 @@ p {
 .faq-text {
     font-size: 24px;
     line-height: 147.3%;
-    margin: 0px 0px 60px;
+    margin: 0 0 60px;
     text-align: center;
 }
 
@@ -599,7 +603,7 @@ dl.faq-list button[aria-expanded="true"] {
     }
 
     .social-networks {
-        margin: 0px 20px;
+        margin: 0 20px;
     }
 
     .footer {
