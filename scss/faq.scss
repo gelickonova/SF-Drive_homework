@@ -1,0 +1,278 @@
+$base-black: #1B1B1B;
+$base-green: #61A199;
+$footer-background: #3F3D56;
+$contacts-background: #F7F9FB;
+
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+}
+
+
+body {
+  font-family: Roboto;
+  margin: 0;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+a, .button {
+  cursor: pointer;
+}
+
+
+header {
+  display: flex;
+  height: 90px;
+  justify-content: space-between;
+  align-items: center;
+
+  .header-logo {
+    margin: 31px 40px;
+  }
+
+  .menu {
+    float: end;
+    display: flex;
+    align-items: center;
+
+    .nav li {
+      display: inline;
+
+      a {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: $base-black;
+        text-decoration: none;
+        margin: 35px 15px;
+      }
+
+    }
+  }
+
+  .button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    border: 1px solid rgba(27, 27, 27, 0.4);
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 12px 30px;
+    background-color: #FFFFFF;
+    margin: 23px 40px 23px 25px;
+    color: $base-black;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 754px) {
+  header {
+    margin-bottom: 60px;
+    height: 68px;
+
+    .header-logo {
+      margin: 20px;
+    }
+
+    .menu {
+      display: none;
+    }
+
+    .menu-icon {
+      display: inline;
+      margin: 23px;
+      border: none;
+      background-color: transparent;
+    }
+  }
+}
+
+
+/*============================ end of header ========================================*/
+
+
+.faq-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  p {
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  .faq-h1 {
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 120%;
+    text-align: center;
+    color: #1B1B1B;
+    margin-bottom: 30px;
+    margin-top: 60px;
+  }
+
+  .faq-text {
+    font-size: 24px;
+    line-height: 147.3%;
+    margin: 0 0 60px;
+    text-align: center;
+  }
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+
+    dt {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      button {
+        background: #F7F7F8;
+        border: none;
+        border-radius: 6px;
+        font-size: 20px;
+        color: #1B1B1B;
+        padding: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        margin-bottom: 15px;
+
+        &:hover {
+          background: rgba(97, 161, 153, 0.1);
+        }
+
+        &[aria-expanded="false"]::after {
+          content: url('../img/arrow-down.svg');
+          width: 44px;
+          text-align: right;
+        }
+
+        &[aria-expanded="true"]::after {
+          content: url('img/arrow-up.svg');
+          width: 44px;
+          text-align: right;
+          font-weight: 500;
+        }
+
+        [aria-expanded="true"] {
+          background: rgba(97, 161, 153, 0.15);
+          color: #61A199;
+        }
+      }
+    }
+
+    dd {
+      margin: 0;
+      width: 100%;
+
+      .desc {
+        font-size: 20px;
+        padding: 5px 22px 40px;
+        width: 75%;
+        margin: 0;
+      }
+
+      .hidden {
+        display: none;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 754px) {
+  .faq-pic {
+    width: 70%;
+  }
+
+  .faq-h1 {
+    font-size: 32px;
+  }
+
+  .faq-text {
+    font-size: 16px;
+  }
+
+  .faq-list {
+    width: 90%;
+  }
+
+  dl.faq-list button {
+    font-size: 14px;
+    line-height: 147.3%;
+  }
+
+  .desc {
+    font-size: 14px;
+  }
+}
+
+/*============================ end of main ========================================*/
+
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 124px;
+  background-color: $footer-background;
+
+  .copyright {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    opacity: 0.4;
+    margin: 53px 40px 52px;
+  }
+
+  .social-networks {
+    margin: 49px 43px;
+    width: 138px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .icon:hover path {
+    fill: $base-green;
+  }
+}
+
+@media screen and (max-width: 754px) {
+
+  .footer {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .copyright {
+      font-size: 16px;
+      line-height: 19px;
+      margin: 30px 20px 16px;
+    }
+
+    .social-networks {
+      margin: 0 20px;
+    }
+
+  }
+}
+

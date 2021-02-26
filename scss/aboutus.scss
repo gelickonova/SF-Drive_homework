@@ -1,0 +1,421 @@
+$base-black: #1B1B1B;
+$base-green: #61A199;
+$footer-background: #3F3D56;
+$contacts-background: #F7F9FB;
+
+
+a, .button {
+  cursor: pointer;
+}
+
+a:hover, .button:hover {
+  color: $base-green;
+}
+
+header {
+  display: flex;
+  height: 90px;
+  justify-content: space-between;
+  align-items: center;
+
+  .header-logo {
+    margin: 31px 40px;
+  }
+
+  .menu {
+    float: end;
+    display: flex;
+    align-items: center;
+
+    .nav li {
+      display: inline;
+
+      a {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: $base-black;
+        text-decoration: none;
+        margin: 35px 15px;
+      }
+
+    }
+  }
+
+  .button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    border: 1px solid rgba(27, 27, 27, 0.4);
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 12px 30px;
+    background-color: #FFFFFF;
+    margin: 23px 40px 23px 25px;
+    color: $base-black;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 754px) {
+  header {
+    margin-bottom: 60px;
+    height: 68px;
+
+    .header-logo {
+      margin: 20px;
+    }
+
+    .menu {
+      display: none;
+    }
+
+    .menu-icon {
+      display: inline;
+      margin: 23px;
+      border: none;
+      background-color: transparent;
+    }
+  }
+}
+
+/*============================ end of header ========================================*/
+
+
+html {
+  overflow-x: hidden;
+
+  body {
+    margin: 0;
+  }
+}
+
+p, a, h1, .button, h2 {
+  font-family: Roboto;
+  font-style: normal;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px 0;
+
+  .team_pic {
+    width: 397px;
+    margin: 0 0 30px 0;
+  }
+
+  .about-h1 {
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 120%;
+    margin: 30px 0;
+    text-align: center;
+  }
+
+  .about-text {
+    width: 925px;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 147.3%;
+    text-align: center;
+    color: $base-black;
+    margin: 0;
+  }
+}
+
+
+@media screen and (max-width: 980px) {
+  .about-section {
+    margin: 0;
+
+    .team_pic {
+      width: 70%;
+    }
+
+    .about-h1 {
+      font-weight: 500;
+      font-size: 32px;
+      margin: 10px 0;
+    }
+
+    .about-text {
+      width: 90%;
+      font-size: 16px;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+/*============================ end of about section ========================================*/
+
+.contacts-section {
+  background-color: $contacts-background;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0 100px;
+
+  .contacts-h2 {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 120%;
+    text-align: center;
+    color: $base-black;
+    margin-bottom: 40px;
+  }
+
+  .contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .mail-and-tel {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0 69px;
+
+      .link {
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 147.3%;
+        text-align: center;
+        color: #000000;
+        text-decoration: none;
+        width: 259px;
+        height: 29px;
+        margin: 5px;
+      }
+
+      .label {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 147.3%;
+        text-align: center;
+        color: #4F4F4F;
+        margin: 0;
+      }
+    }
+
+    .rectangle {
+      background: #C8C8CF
+    }
+  }
+}
+
+
+@media screen and (max-width: 754px) {
+  .contacts-section {
+    padding: 30px;
+
+    .contacts-h2 {
+      font-size: 24px;
+      margin: 10px;
+    }
+
+    .contacts {
+      flex-direction: column;
+
+      .rectangle {
+        display: none;
+      }
+
+      .mail-and-tel {
+        margin: 10px;
+      }
+
+      .link {
+        font-size: 14px;
+      }
+
+      .label {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+
+/*============================ end of contacts ========================================*/
+
+
+.team-section {
+  margin: 80px 0 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .team-h2 {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 120%;
+    text-align: center;
+    color: $base-black;
+    margin: 0;
+  }
+
+  .team-men {
+    margin-top: 55px;
+    display: flex;
+  }
+
+  .team-women {
+    margin-top: 60px;
+    display: flex;
+
+  }
+
+  .person {
+    margin: 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .name {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 147.3%;
+      text-align: center;
+      color: #000000;
+      margin: 23px 0 8px
+    }
+
+    .position {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 147.3%;
+      text-align: center;
+      color: #828282;
+      margin: 0;
+    }
+  }
+}
+
+
+@media screen and (max-width: 980px) {
+  .team-section {
+    margin: 0;
+    padding: 40px 0 60px;
+
+    .team-h2 {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+
+
+    .team-men {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 30px;
+      margin: 0;
+
+      .person {
+        margin: 0;
+
+        .name {
+          font-size: 16px;
+          width: 167px;
+          text-align: center;
+        }
+
+        .position {
+          font-size: 12px;
+        }
+
+        .personal-pic {
+          width: 80px;
+        }
+      }
+    }
+
+    .team-women {
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 30px;
+      margin-top: 30px;
+
+      .person {
+        margin: 0;
+
+        .name {
+          font-size: 16px;
+          width: 167px;
+          text-align: center;
+        }
+
+        .position {
+          font-size: 12px;
+        }
+
+        .personal-pic {
+          width: 80px;
+        }
+      }
+    }
+
+
+  }
+}
+
+
+/*============================ end of main ========================================*/
+
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 124px;
+  background-color: $footer-background;
+
+  .copyright {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    opacity: 0.4;
+    margin: 53px 40px 52px;
+  }
+
+  .social-networks {
+    margin: 49px 43px;
+    width: 138px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .icon:hover path {
+    fill: $base-green;
+  }
+}
+
+@media screen and (max-width: 754px) {
+
+  .footer {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .copyright {
+      font-size: 16px;
+      line-height: 19px;
+      margin: 30px 20px 16px;
+    }
+
+    .social-networks {
+      margin: 0 20px;
+    }
+
+  }
+}
+
