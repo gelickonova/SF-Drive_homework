@@ -10,7 +10,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.css$/,
+                test: /\.scss$/,
                 use: [
                     {
                         loader: MiniCssExtractPlugin.loader,
@@ -18,7 +18,8 @@ module.exports = {
                             esModule: true,
                         },
                     },
-                    'css-loader',
+                    "css-loader",
+                    "sass-loader",
                 ],
             },
             {
