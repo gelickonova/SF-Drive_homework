@@ -317,7 +317,7 @@ a, .button {
   text-align: right;
   font-weight: 500;
 }
-.questions .faq-list dt button [aria-expanded=true] {
+.questions .faq-list dt button[aria-expanded=true] {
   background: rgba(97, 161, 153, 0.15);
   color: #61A199;
 }

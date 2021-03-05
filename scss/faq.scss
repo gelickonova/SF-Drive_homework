@@ -88,7 +88,7 @@ a, .button {
           font-weight: 500;
         }
 
-        [aria-expanded="true"] {
+        &[aria-expanded="true"] {
           background: rgba(97, 161, 153, 0.15);
           color: $base-green;
         }
