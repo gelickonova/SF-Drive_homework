@@ -525,13 +525,13 @@ dl.faq-list button:hover {
 }
 
 dl.faq-list button[aria-expanded="false"]::after {
-    content: url('img/arrow-down.svg');
+    content: url('src/img/arrow-down.svg');
     width: 44px;
     text-align: right;
 }
 
 dl.faq-list button[aria-expanded="true"]::after {
-    content: url('img/arrow-up.svg');
+    content: url('src/img/arrow-up.svg');
     width: 44px;
     text-align: right;
     font-weight: 500;
