@@ -1,5 +1,7 @@
 @import "variables";
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -8,6 +10,7 @@
   background-color: $footer-background;
 
   .copyright {
+    font-family: Roboto, sans-serif;
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;

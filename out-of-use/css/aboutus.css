@@ -91,7 +91,7 @@ html {
     margin: 0; }
 
 p, a, h1, .button, h2 {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal; }
 
 .about-section {
