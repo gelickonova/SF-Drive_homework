@@ -1,7 +1,7 @@
-import '../scss/aboutus.scss'
-import '../scss/faq.scss'
-import '../scss/footer.scss'
-import '../scss/header.scss'
+import '../../scss/aboutus.scss'
+import '../../scss/faq.scss'
+import '../../scss/footer.scss'
+import '../../scss/header.scss'
 
 function whenReady() {
     let btns = document.getElementsByClassName('collapsible');
