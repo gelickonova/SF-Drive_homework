@@ -1,11 +1,5 @@
 @import "variables";
 
-@font-face {
-  font-family: 'Roboto';
-  src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-}
-
-
 body {
   font-family: Roboto;
   margin: 0;
@@ -76,13 +70,13 @@ a, .button {
         }
 
         &[aria-expanded="false"]::after {
-          content: url('src/img/arrow-down.svg');
+          content: url('../src/img/arrow-down.svg');
           width: 44px;
           text-align: right;
         }
 
         &[aria-expanded="true"]::after {
-          content: url('src/img/arrow-up.svg');
+          content: url('../src/img/arrow-up.svg');
           width: 44px;
           text-align: right;
           font-weight: 500;

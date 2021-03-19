@@ -1,14 +1,16 @@
 import React from 'react';
 import Header from "./Header";
 import Footer from "./Footer";
-import AboutUsMain from "./AboutUsMain";
-import '../../scss/aboutus.scss'
+import FaqMain from "./FaqMain";
+import '../../scss/faq.scss';
+import '../../scss/header.scss';
+import '../../scss/footer.scss';
 
 export default class AboutUs extends React.Component {
     render() {
         return (<React.Fragment>
             <Header></Header>
-            <AboutUsMain></AboutUsMain>
+            <FaqMain></FaqMain>
             <Footer></Footer>
         </React.Fragment>);
     }
