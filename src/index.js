@@ -1,5 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Faq from './components/Faq'
+import SFDrive from "./components/SFDrive";
 
-ReactDOM.render(<Faq/>, document.getElementById('root'));
+ReactDOM.render(<SFDrive/>, document.getElementById('root'));

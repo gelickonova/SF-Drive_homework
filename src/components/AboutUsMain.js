@@ -1,10 +1,20 @@
 import React from 'react';
+import TeamPic from "../img/undraw_team_spirit_hrr4.svg";
+import Rectangle from "../img/rect.svg";
+
+import Ivanov from "../img/ivanov.png";
+import Smirnov from "../img/smirnov.png";
+import Yartsev from "../img/yartsev.png";
+import Morozov from "../img/morozov.png";
+import Deeva from "../img/deeva.png";
+import Strelkova from "../img/strelkova.png"
+import Person from "./Person";
 
 export default class AboutUsMain extends React.Component {
     render() {
         return (<main>
             <section className="about-section">
-                <img src="../img/undraw_team_spirit_hrr4.svg" alt="Рисунок команды" className="team_pic"/>
+                <img src={TeamPic} alt="Рисунок команды" className="team_pic"/>
                     <h1 className="about-h1">О нас</h1>
                     <p className="about-text">Это учебный проект, созданный с целью получения боевого опыта в разработке
                         настоящего
@@ -21,7 +31,7 @@ export default class AboutUsMain extends React.Component {
                         <p className="label">Электронная почта</p>
                         <a href="mailto:drive@skillfactory.com" className="link">drive@skillfactory.com</a>
                     </div>
-                    <img src="../img/rect.svg" className="rectangle"/>
+                    <img src={Rectangle} className="rectangle"/>
                         <div className="mail-and-tel">
                             <p className="label">Телефон</p>
                             <a href="tel:+79121234567" className="link">+7 912 123-45-67</a>
@@ -31,38 +41,14 @@ export default class AboutUsMain extends React.Component {
             <section className="team-section">
                 <h2 className="team-h2">Команда</h2>
                 <div className="team-men">
-                    <div className="person">
-                        <img src="../img/ivanov.png" alt="фотография Ивана Иванова" className="personal-pic"/>
-                            <p className="name">Иван Иванов</p>
-                            <p className="position">СЕО</p>
-                    </div>
-                    <div className="person">
-                        <img src="../img/smirnov.png" alt=" фотография Алексея Смирнова" className="personal-pic"/>
-                            <p className="name">Алексей Смирнов</p>
-                            <p className="position">Frontend-разработчик</p>
-                    </div>
-                    <div className="person">
-                        <img src="../img/yartsev.png" alt="фотография Дениса Ярцева" className="personal-pic"/>
-                            <p className="name">Денис Ярцев</p>
-                            <p className="position">Backend-разработчик</p>
-                    </div>
-                    <div className="person">
-                        <img src="../img/morozov.png" alt="фотография Николая Морозова" className="personal-pic"/>
-                            <p className="name">Николай Морозов</p>
-                            <p className="position">Дизайнер</p>
-                    </div>
+                    <Person fullName="Иван Иванов" alt="фотография Ивана Иванова" avatar={Ivanov} position="СЕО"/>
+                    <Person fullName="Алексей Смирнов" alt="фотография Алексея Смирнова" avatar={Smirnov} position="Frontend-разработчик"/>
+                    <Person fullName="Денис Ярцев" alt="фотография Дениса Ярцева" avatar={Yartsev} position="Backend-разработчик"/>
+                    <Person fullName="Николай Морозов" alt="фотография Николая Морозова" avatar={Morozov} position="Дизайнер"/>
                 </div>
                 <div className="team-women">
-                    <div className="person">
-                        <img src="../img/deeva.png" alt="фотография Ирины Деевой" className="personal-pic"/>
-                            <p className="name">Ирина Деева</p>
-                            <p className="position">Копирайтер</p>
-                    </div>
-                    <div className="person">
-                        <img src="../img/strelkova.png" alt="фотография Марии Стрелковой" className="personal-pic"/>
-                            <p className="name">Мария Стрелкова</p>
-                            <p className="position">SMM</p>
-                    </div>
+                    <Person fullName="Ирина Деева" alt="фотография Ирины Деевой" avatar={Deeva} position="Копирайтер"/>
+                    <Person fullName="Мария Стрелкова" alt="фотография Марии Стрелковой" avatar={Strelkova} position="SMM"/>
                 </div>
             </section>
         </main>);
