@@ -9,9 +9,11 @@ import Morozov from "../img/morozov.png";
 import Deeva from "../img/deeva.png";
 import Strelkova from "../img/strelkova.png"
 import Person from "./Person";
+import {Route} from "react-router-dom";
 
 export default class AboutUsMain extends React.Component {
     render() {
+        document.title = "О нас";
         return (<main>
             <section className="about-section">
                 <img src={TeamPic} alt="Рисунок команды" className="team_pic"/>

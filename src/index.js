@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import SFDrive from "./components/SFDrive";
+import {BrowserRouter} from "react-router-dom";
 
-ReactDOM.render(<SFDrive/>, document.getElementById('root'));
+ReactDOM.render(<BrowserRouter><SFDrive/></BrowserRouter>, document.getElementById('root'));

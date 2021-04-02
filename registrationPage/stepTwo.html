@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="stepTwo.css">
+</head>
+<body>
+<header>
+    <a href="#" class="header-logo"><img src="../src/img/logo.svg"
+                                         alt="Логотип SkillDrive, ссылка на главную страницу"/></a>
+    <section class="menu">
+        <nav>
+            <ul class="nav">
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Условия</a></li>
+                <li><a href="#">Частые вопросы</a></li>
+            </ul>
+        </nav>
+        <button class="button">Войти</button>
+    </section>
+    <button class="menu-icon">
+        <img src="./src/img/mobile-menu-icon.svg" alt="меню"/>
+    </button>
+</header>
+<main class="step-two-main">
+    <div>
+        <p class="step">Шаг 2 из 3</p>
+        <h1>Загрузите своё фото</h1>
+        <p class="description">Смотрите прямо в камеру, без солнцезащитных очков и головных уборов.</p>
+    </div>
+    <form enctype="multipart/form-data" method="post" class="form">
+        <label for="upload-photo" class="label-upload-photo">
+            <img src="../src/img/camera-icon.svg" alt="форма для отправки фото" class="photo-form">
+            <input type="file" class="photo-input"
+                   id="upload-photo" accept="image/png, image/jpeg">
+        </label>
+        <div class="footerBtn">
+        <input type="submit" value="Продолжить"  class="continueBtn activeBtn">
+        </div>
+    </form>
+</main>
+</body>
+</html>

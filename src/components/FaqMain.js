@@ -4,6 +4,7 @@ import QuestionImg from "../img/questions.svg"
 
 export default class AboutUsMain extends React.Component {
     render() {
+        document.title = "Частые вопросы"
         return (<main>
             <section className="faq-section">
                 <img src={QuestionImg} alt="Рисунок" className="faq-pic"/>

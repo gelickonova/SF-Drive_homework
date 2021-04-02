@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Частые вопросы</title>
+    <title>О нас</title>
     <link rel="stylesheet" href="dist/main.css">
-    <script type="text/javascript" src="#"></script>
 </head>
 <body>
 <header>
-    <a href="#" class="header-logo"><img src="src/img/logo.svg" alt="Логотип SkillDrive, ссылка на главную страницу"></a>
+    <a href="#" class="header-logo"><img src="../src/img/logo.svg" alt="Логотип SkillDrive, ссылка на главную страницу"></a>
     <section class="menu">
         <nav>
             <ul class="nav">
@@ -20,68 +19,70 @@
         </nav>
         <button class="button">Войти</button>
     </section>
-    <button class="menu-icon">
-        <img src="src/img/mobile-menu-icon.svg" alt="меню">
+    <button  class="menu-icon">
+        <img src="../src/img/mobile-menu-icon.svg" alt="меню">
     </button>
 </header>
 <main>
-    <section class="faq-section">
-        <img src="src/img/questions.svg" alt="Рисунок" class="faq-pic">
-        <h1 class="faq-h1">Частые вопросы</h1>
-        <p class="faq-text">Отвечаем на вопросы, которые у вас могут возникнуть.</p>
+    <section class="about-section">
+        <img src="../src/img/undraw_team_spirit_hrr4.svg" alt="Рисунок команды" class="team_pic">
+        <h1 class="about-h1">О нас</h1>
+        <p class="about-text">Это учебный проект, созданный с целью получения боевого опыта в разработке настоящего
+            живого
+            веб-приложения. Этот сервис имитирует работу каршеринга, в котором можно не только арендовать автомобили, но
+            и сдавать их в аренду.
+        </p>
     </section>
-    <section class="questions">
-        <dl class="faq-list">
-            <dt>
-                <button aria-expanded="false" aria-controls="faq1_desc" class="collapsible">
-                    Могу ли я отменить бронь?
-                </button>
-            </dt>
-            <dd>
-                <p id="faq1_desc" class="desc hidden"></p>
-            </dd>
-            <dt>
-                <button aria-expanded="false" aria-controls="faq2_desc" class="collapsible">
-                    Могу ли я вернуть деньги, если не подошёл автомобиль?
-                </button>
-            </dt>
-            <dd>
-                <p id="faq2_desc" class="desc hidden"></p>
-            </dd>
-            <dt>
-                <button aria-expanded="false" aria-controls="faq3_desc" class="collapsible">
-                    Что делать, если случилось ДТП?
-                </button>
-            </dt>
-            <dd>
-                <p id="faq3_desc" class="desc hidden"></p>
-            </dd>
-            <dt>
-                <button aria-expanded="true" aria-controls="faq4_desc" class="collapsible">
-                    Могу ли я оставить автомобиль в удобном для меня месте?
-                </button>
-            </dt>
-            <dd>
-                <p id="faq4_desc" class="desc">Данный вопрос обсуждается с собственником, но как правило автомобиль
-                    нужно вернуть туда, где вы его получили.</p>
-            </dd>
-            <dt>
-                <button aria-expanded="false" aria-controls="faq5_desc" class="collapsible">
-                    Что делать, если собственник просит заплатить ему напрямую?
-                </button>
-            </dt>
-            <dd>
-                <p id="faq5_desc" class="desc hidden"></p>
-            </dd>
-            <dt>
-                <button aria-expanded="false" aria-controls="faq6_desc" class="collapsible">
-                    Должен ли я заправлять автомобиль?
-                </button>
-            </dt>
-            <dd>
-                <p id="faq6_desc" class="desc"></p>
-            </dd>
-        </dl>
+    <section class="contacts-section">
+        <h2 class="contacts-h2">Контакты</h2>
+        <div class="contacts">
+            <div class="mail-and-tel">
+                <p class="label">Электронная почта</p>
+                <a href="mailto:drive@skillfactory.com" class="link">drive@skillfactory.com</a>
+            </div>
+            <img src="../src/img/rect.svg" class="rectangle">
+            <div class="mail-and-tel">
+                <p class="label">Телефон</p>
+                <a href="tel:+79121234567" class="link">+7 912 123-45-67</a>
+            </div>
+        </div>
+    </section>
+    <section class="team-section">
+        <h2 class="team-h2">Команда</h2>
+        <div class="team-men">
+            <div class="person">
+                <img src="../src/img/ivanov.png" alt="фотография Ивана Иванова" class="personal-pic">
+                <p class="name">Иван Иванов</p>
+                <p class="position">СЕО</p>
+            </div>
+            <div class="person">
+                <img src="../src/img/smirnov.png" alt=" фотография Алексея Смирнова" class="personal-pic">
+                <p class="name">Алексей Смирнов</p>
+                <p class="position">Frontend-разработчик</p>
+            </div>
+            <div class="person">
+                <img src="../src/img/yartsev.png" alt="фотография Дениса Ярцева" class="personal-pic">
+                <p class="name">Денис Ярцев</p>
+                <p class="position">Backend-разработчик</p>
+            </div>
+            <div class="person">
+                <img src="../src/img/morozov.png" alt="фотография Николая Морозова" class="personal-pic">
+                <p class="name">Николай Морозов</p>
+                <p class="position">Дизайнер</p>
+            </div>
+        </div>
+        <div class="team-women">
+            <div class="person">
+                <img src="../src/img/deeva.png" alt="фотография Ирины Деевой" class="personal-pic">
+                <p class="name">Ирина Деева</p>
+                <p class="position">Копирайтер</p>
+            </div>
+            <div class="person">
+                <img src="../src/img/strelkova.png" alt="фотография Марии Стрелковой" class="personal-pic">
+                <p class="name">Мария Стрелкова</p>
+                <p class="position">SMM</p>
+            </div>
+        </div>
     </section>
 </main>
 <footer class="footer">
