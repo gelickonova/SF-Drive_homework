@@ -21,7 +21,7 @@ export default class LogInWindow extends React.Component {
                             </label>
                             <button className="loginBtn">Войти</button>
                             <img src={Rectangle} className="loginRect"/>
-                                <Link to="/registration" className="registration" onClick={()=>{this.props.toggle()}}>Зарегистрироваться</Link>
+                                <Link to="/registration/step1" className="registration" onClick={()=>{this.props.toggle()}}>Зарегистрироваться</Link>
                 </div>
             </div>
         )

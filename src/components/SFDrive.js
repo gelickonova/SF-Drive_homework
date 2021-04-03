@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link, Route, Switch} from 'react-router-dom'
+import {Route, Switch} from 'react-router-dom'
 import Footer from "./Footer";
 import FaqMain from "./FaqMain";
 import AboutUsMain from "./AboutUsMain"
@@ -8,6 +8,7 @@ import '../../scss/faq.scss';
 import '../../scss/header.scss';
 import '../../scss/footer.scss';
 import '../../scss/register.scss';
+import '../../scss/registertwo.scss';
 import Header from "./Header";
 import RegisterOneMain from "./RegisterOneMain";
 import RegisterTwoMain from "./RegisterTwoMain";
@@ -29,10 +30,8 @@ export default class SFDrive extends React.Component {
                     <FaqMain/>
                     <Footer/>
                 </Route>
-                <Route path="/registration">
-                    <RegisterOneMain/>
-                </Route>
-                <Route path="/stepTwo">
+                <Route path="/registration/step1" component={RegisterOneMain}/>
+                <Route path="/registration/step2">
                     <RegisterTwoMain/>
                 </Route>
                 <Route path="/">
