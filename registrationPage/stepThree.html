@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Шаг 3 из 3</title>
+    <link rel="stylesheet" href="stepThree.css">
+</head>
+<body>
+<header>
+    <a href="#" class="header-logo"><img src="../src/img/logo.svg" alt="Логотип SkillDrive, ссылка на главную страницу"></a>
+    <section class="menu">
+        <nav>
+            <ul class="nav">
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Условия</a></li>
+                <li><a href="#">Частые вопросы</a></li>
+            </ul>
+        </nav>
+        <button class="button">Войти</button>
+    </section>
+    <button class="menu-icon">
+        <img src="../src/img/mobile-menu-icon.svg" alt="меню">
+    </button>
+</header>
+
+<main>
+    <div>
+        <p class="step">Шаг 3 из 3</p>
+        <h1>Загрузите документы</h1>
+        <p class="description">Разворот паспорта и страницу с пропиской, а также водительское удостоверение с двух сторон</p>
+    </div>
+    <form encType="multipart/form-data" method="post" class="form">
+        <label for="upload-photo" class="label-upload-photo documents-form">
+            <img src="../src/img/documents.svg" alt="форма для отправки фото"/>
+            <input type="file" class="photo-input"
+                   id="upload-photo" accept="image/png, image/jpeg" multiple/>
+        </label>
+        <div class="footerBtn">
+            <input type="submit" value="Зарегистрироваться" class="continueBtn activeBtn"/>
+        </div>
+    </form>
+</main>
+</body>
+</html>

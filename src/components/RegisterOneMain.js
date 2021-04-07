@@ -26,36 +26,7 @@ export default class RegisterOneMain extends React.Component {
         const name = target.name;
         this.setState({
             [name]: value
-        })
-        // switch (target.name) {
-        //
-        //     case 'fullName':
-        //         break
-        //     case 'birthDate':
-        //         break
-        //     case 'email':
-        //         break
-        //     case 'phoneNumber':
-        //         break
-        //     case 'passportID':
-        //         break
-        //     case 'dateOfIssue':
-        //         break
-        //     case 'issuingAuthority':
-        //         break
-        //     case 'departmentCode':
-        //         break
-        //     case 'numberOfLicense':
-        //         break
-        //     case 'dateOfLicense':
-        //         break
-        //     case 'password':
-        //         break
-        //     case 'repeatPassword':
-        //         break
-        // }
-    }
-
+        })}
 
     render() {
         document.title = "Регистрация"

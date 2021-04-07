@@ -1,9 +1,10 @@
 import React from 'react';
 import cameraIcon from '../img/camera-icon.svg'
+import axios from "axios";
 
 export default class RegisterOneMain extends React.Component {
     render() {
-        document.title = "Регистрация"
+        document.title = "Шаг 2 из 3"
         return (<main className="step-two-main">
             <div>
                 <p className="step">Шаг 2 из 3</p>
@@ -17,7 +18,12 @@ export default class RegisterOneMain extends React.Component {
                                id="upload-photo" accept="image/png, image/jpeg"/>
                 </label>
                 <div className="footerBtn">
-                    <input type="submit" value="Продолжить" className="continueBtn activeBtn"/>
+                    <input type="submit" value="Продолжить" className="continueBtn activeBtn" onClick={(e) => {
+                        e.preventDefault()
+                        axios.post("/registration/step2", this.state).then(res => res.data).then(data => {
+                            if(data) this.props.history.push('/registration/step3')
+                        })
+                    }}/>
                 </div>
             </form>
         </main>)

@@ -12,6 +12,8 @@ import '../../scss/registertwo.scss';
 import Header from "./Header";
 import RegisterOneMain from "./RegisterOneMain";
 import RegisterTwoMain from "./RegisterTwoMain";
+import RegisterThreeMain from "./RegisterThreeMain"
+import RegisterSuccess from "./RegisterSuccess";
 
 export default class SFDrive extends React.Component {
     constructor(props) {
@@ -31,9 +33,9 @@ export default class SFDrive extends React.Component {
                     <Footer/>
                 </Route>
                 <Route path="/registration/step1" component={RegisterOneMain}/>
-                <Route path="/registration/step2">
-                    <RegisterTwoMain/>
-                </Route>
+                <Route path="/registration/step2" component={RegisterTwoMain}/>
+                <Route path="/registration/step3" component={RegisterThreeMain}/>
+                <Route path="/registration/done" component={RegisterSuccess}/>
                 <Route path="/">
                     <AboutUsMain/>
                     <Footer/>
