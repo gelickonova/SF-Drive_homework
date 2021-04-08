@@ -43,8 +43,16 @@ app.get('/', function (req, res) {
 })
 
 app.post("/registration/step1", function (req, res) {
-    console.log(req.body)
-    res.sendStatus(200)
+    const user = req.body;
+    const errors = {};
+    const emailRegex = /^\S+@\S+\.\S+$/;
+
+    if (user.password !== user.repeatPassword) errors.password = true;
+    if (!user.email.match(emailRegex)) errors.email = true;
+    if (errors.password || errors.email) {
+        res.status(500).send(errors)
+    } else
+        res.sendStatus(200)
 })
 
 app.post("/registration/step2", function (req, res) {

@@ -47,12 +47,22 @@
       flex-direction: column;
       align-items: center;
 
+      .previewImage {
+        position: absolute;
+        width: 432px;
+        height: 320px;
+        border-radius: 10px;
+        z-index: 10;
+      }
+
       .photo-icon {
+        position: absolute;
         padding: 148px 204px;
         background: #F7F7F8;
         border-radius: 10px;
       }
-      .documents-form{
+
+      .documents-form {
         width: 678px;
         height: 321px;
         background: #FFFFFF;
